@@ -1,6 +1,8 @@
-import { FlatList, Image, Text, TouchableOpacity, View } from "react-native"
-import tw from "../../lib/tailwind"
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome"
+import { useNavigation } from "@react-navigation/native"
+import { FlatList, Image, Text, TouchableOpacity, View } from "react-native"
+
+import tw from "../../lib/tailwind"
 
 const data = [
   {
@@ -18,6 +20,8 @@ const data = [
 ]
 
 const NavOptions = () => {
+  const navigation = useNavigation()
+
   return (
     <FlatList
       horizontal
@@ -25,7 +29,12 @@ const NavOptions = () => {
       data={data}
       keyExtractor={item => item.id}
       renderItem={({ item }) => (
-        <TouchableOpacity style={tw`p-2 pt-4 pb-8 pl-6 bg-gray-200 m-2 w-40`}>
+        <TouchableOpacity
+          style={tw`p-2 pt-4 pb-8 pl-6 bg-gray-200 m-2 w-40 rounded-md`}
+          onPress={() => {
+            navigation.navigate(item.screen)
+          }}
+        >
           <View>
             <Image
               style={{ width: 120, height: 120, resizeMode: "contain" }}

@@ -1,8 +1,9 @@
 import { View, Image, SafeAreaView } from "react-native"
+
 import tw from "../../lib/tailwind"
 import NavOptions from "../components/NavOptions"
 
-export default function HomeScreen() {
+const HomeScreen = () => {
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
@@ -21,3 +22,5 @@ export default function HomeScreen() {
     </SafeAreaView>
   )
 }
+
+export default HomeScreen
