@@ -17,9 +17,3 @@ export default function HomeScreen() {
     </SafeAreaView>
   )
 }
-
-// const styles = StyleSheet.create({
-//   headers: {
-//     color: "#ff7613",
-//   },
-// })
