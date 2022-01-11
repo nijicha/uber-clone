@@ -1,8 +1,8 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import HomeScreen from "../app/screens/HomeScreen"
-import MapScreen from "../app/screens/MapScreen"
-import FoodDeliveryScreen from "../app/screens/FoodDeliveryScreen"
+import HomeScreen from '../app/screens/HomeScreen'
+import MapScreen from '../app/screens/MapScreen'
+import FoodDeliveryScreen from '../app/screens/FoodDeliveryScreen'
 
 export default function Routes() {
   const Stack = createNativeStackNavigator()

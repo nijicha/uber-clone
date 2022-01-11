@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
   origin: null,
@@ -7,7 +7,7 @@ const initialState = {
 }
 
 export const navSlice = createSlice({
-  name: "nav",
+  name: 'nav',
   initialState,
   reducer: {
     setOrigin: (state, action) => {
