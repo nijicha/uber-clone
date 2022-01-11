@@ -14,3 +14,9 @@ web-build/
 .DS_Store
 
 .eslintcache
+
+# dotenv
+.env
+.env.*
+!.env.template
+!.env.*.template
