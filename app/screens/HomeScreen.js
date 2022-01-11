@@ -1,5 +1,5 @@
 import { View, Image, SafeAreaView } from "react-native"
-import tw from "tailwind-react-native-classnames"
+import tw from "../../lib/tailwind"
 import NavOptions from "../components/NavOptions"
 
 export default function HomeScreen() {

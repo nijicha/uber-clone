@@ -1,6 +1,8 @@
 import { Provider } from "react-redux"
-import { store } from "./lib/store"
 import { SafeAreaProvider } from "react-native-safe-area-context"
+
+import { store } from "./lib/store"
+import "./lib/fontawesome"
 
 import HomeScreen from "./app/screens/HomeScreen"
 
