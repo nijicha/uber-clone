@@ -1,13 +1,18 @@
 import { View, Image, SafeAreaView } from "react-native"
-import tw from "tailwind-react-native-classnames"
+
+import tw from "../../lib/tailwind"
 import NavOptions from "../components/NavOptions"
 
-export default function HomeScreen() {
+const HomeScreen = () => {
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>
         <Image
-          style={{ width: 100, height: 100, resizeMode: "contain" }}
+          style={tw.style(`ml-2`, {
+            width: 100,
+            height: 100,
+            resizeMode: "contain",
+          })}
           source={{
             uri: "https://links.papareact.com/gzs",
           }}
@@ -17,3 +22,5 @@ export default function HomeScreen() {
     </SafeAreaView>
   )
 }
+
+export default HomeScreen
