@@ -30,7 +30,7 @@ const NavOptions = () => {
       keyExtractor={item => item.id}
       renderItem={({ item }) => (
         <TouchableOpacity
-          style={tw`p-2 pt-4 pb-8 pl-6 bg-gray-200 m-2 w-40 rounded-md`}
+          style={tw`m-2 p-2 pt-4 pb-8 pl-6 w-40 rounded-md bg-gray-200`}
           onPress={() => {
             navigation.navigate(item.screen)
           }}
@@ -43,7 +43,7 @@ const NavOptions = () => {
             <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
 
             <View
-              style={tw`flex flex-row justify-center items-center mt-4 p-2 w-10 h-10 bg-black rounded-full`}
+              style={tw`flex flex-row justify-center items-center mt-4 p-2 w-10 h-10 rounded-full bg-black`}
             >
               <FontAwesomeIcon
                 icon={["fal", "arrow-right"]}
