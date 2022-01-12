@@ -32,7 +32,7 @@ const NavCards = () => {
         keyExtractor={item => item.id}
         renderItem={({ item }) => (
           <TouchableOpacity
-            style={tw`flex-shrink pt-4 pr-2 pb-8 pl-6 w-40 rounded-md bg-gray-100`}
+            style={tw`flex-shrink pt-4 pr-2 pb-8 pl-6 w-40 rounded bg-gray-100`}
             onPress={() => {
               navigation.navigate(item.screen)
             }}
